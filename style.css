@@ -1,0 +1,33 @@
+.image-wrap {
+    display: flex;
+    align-items: flex-start;
+}
+
+.image-wrap .main-img {
+    border: 2px solid red;
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrap .main-img .overlay {
+    position: absolute;
+    width: 180px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    display: none;
+}
+
+.image-wrap .sub-img {
+    width: 300px;
+    height: 300px;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+    margin-left: 2px;
+}
