@@ -30,7 +30,7 @@ mainImage.addEventListener("mousemove", function (e) {
     subImage.style.backgroundPosition = `${zoomX}% ${zoomY}%`;
 });
 
-mainImage.addEventListener("mouseup", function (e) {
+mainImage.addEventListener("mouseleave", function (e) {
     overlay.style.display = "none";
     subImage.style.display = "none";
 });
