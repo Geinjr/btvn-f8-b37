@@ -22,8 +22,6 @@ mainImage.addEventListener("mousemove", function (e) {
         mouseY = mainImage.offsetHeight - overlay.offsetHeight;
     }
 
-    console.log(mouseX, mouseY);
-
     overlay.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
     let zoomX = ((e.clientX - rect.left) / mainImage.offsetWidth) * 100;
     let zoomY = ((e.clientY - rect.top) / mainImage.offsetHeight) * 100;
